@@ -10,7 +10,7 @@
 
 #### 方法一 使用 Github Actions(最简单, 推荐)
 
-<a href="https://lyc8503.gitee.io/giteepages/github-actions/" target="_blank">可以参照这里的详细说明.</a>
+[可以参照这里的详细说明.](https://lyc8503.gitee.io/giteepages/github-actions/?_blank)
 
 **本项目需要设置的 Secrets:**
 
