@@ -8,17 +8,22 @@
 
 #### 如何使用?
 
-**方法一WORK IN PROGRESS, 暂时请不要使用.**
-
 ##### 方法一 使用 Github Actions(最简单, 推荐)
 
 1. ~~Star 本项目~~
 2. Fork 本项目
-3. 
+3. 剩余步骤可参考[此处的详细教程](https://lyc8503.gitee.io/giteepages/github-actions/).
+
+**本项目需要设置的 Secrets:**
+
+| 名称     | 内容          |
+| -------- | ------------- |
+| ACCOUNT  | 你的B站用户名 |
+| PASSWORD | 你的B站密码   |
 
 
 
-**方法二 使用 Docker 容器(不推荐)**
+**方法二 使用 Docker 容器(相对方法一较复杂)**
 
 1. 找一台安装好 Docker 的服务器
 2. 在任意目录下执行 `git clone https://github.com/lyc8503/BilibiliDailyBonus && cd BilibiliDailyBonus `
