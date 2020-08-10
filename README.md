@@ -10,9 +10,7 @@
 
 #### 方法一 使用 Github Actions(最简单, 推荐)
 
-1. ~~Star 本项目~~
-2. Fork 本项目
-3. 剩余步骤可参考[此处的详细教程](https://lyc8503.gitee.io/giteepages/github-actions/).
+<a href="https://lyc8503.gitee.io/giteepages/github-actions/" target="_blank">可以参照这里的详细说明.</a>
 
 **本项目需要设置的 Secrets:**
 
