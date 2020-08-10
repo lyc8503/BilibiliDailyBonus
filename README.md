@@ -8,11 +8,29 @@
 
 #### 如何使用?
 
-先`git clone`, 安装所需依赖后直接运行 `python3 daily_bonus.py`
+**方法一WORK IN PROGRESS, 暂时请不要使用.**
 
-p.s. Python 版本需要在 3.6 或以上
+##### 方法一 使用 Github Actions(最简单, 推荐)
+
+1. ~~Star 本项目~~
+2. Fork 本项目
+3. 
 
 
 
-#### TODO: 配置 Github Actions, 白嫖 Github 的服务器来打卡
+**方法二 使用 Docker 容器(不推荐)**
+
+1. 找一台安装好 Docker 的服务器
+2. 在任意目录下执行 `git clone https://github.com/lyc8503/BilibiliDailyBonus && cd BilibiliDailyBonus `
+3. 执行 `docker build -t bilibili .`
+4. 安装 Cron, 并使用 cron 每天执行 `docker run --rm --env account=你的用户名 --env password=你的密码 bilibili  ` 
+
+**方法三 直接运行 Python(不推荐)**
+
+1. 找任意一台安装好 Python 3.6 或以上版本的服务器
+2. 在任意目录下执行 `git clone https://github.com/lyc8503/BilibiliDailyBonus && cd BilibiliDailyBonus `
+
+3. 使用 pip 安装依赖库, 参考命令`pip3 install requests rsa chardet`
+
+4. 使用 Cron 每日执行 `python3 daily_bonus.py`
 

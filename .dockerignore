@@ -1,0 +1,5 @@
+.git/
+README.md
+.idea/
+__pycache__/
+LICENSE

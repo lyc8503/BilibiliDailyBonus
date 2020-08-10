@@ -1,0 +1,15 @@
+name: 'BilibiliDailyBonus'
+description: 'Bilibili 活动每日打卡获取硬币.'
+inputs:
+  account:  # id of input
+    description: 'B站账号'
+    required: true
+  password:
+    description: 'B站密码'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'dockerfile'
+  args:
+    - ${{inputs.who-to-greet}}
