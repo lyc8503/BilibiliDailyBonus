@@ -2,6 +2,10 @@ on: [push]
 
 jobs:
   bilibili_job:
+    runs-on: ubuntu=18.04
     steps:
-      - uses: ./action.yml
+      - name: Checkout master
+        uses: actions/checkout@v2
+      - name: Main
+        uses: ./action.yml
     
