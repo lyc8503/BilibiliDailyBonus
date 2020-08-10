@@ -1,0 +1,7 @@
+on: [push]
+
+jobs:
+  bilibili_job:
+    steps:
+      - uses: ./action.yml
+    
