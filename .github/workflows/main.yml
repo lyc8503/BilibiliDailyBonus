@@ -9,6 +9,6 @@ jobs:
       - name: Main
         uses: ./
         env:
-          account: "test"
-          password: "test"
+          account: ${{ secrets.ACCOUNT }}
+          password: ${{ secrets.PASSWORD }}
 
