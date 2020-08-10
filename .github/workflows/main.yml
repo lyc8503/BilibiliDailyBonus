@@ -1,4 +1,6 @@
-on: [push]
+on:
+  schedule:
+    - cron: 00 00 * * *
 
 jobs:
   bilibili_job:
