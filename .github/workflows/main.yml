@@ -7,5 +7,5 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v2
       - name: Main
-        uses: ./action.yml
+        uses: ./
 
