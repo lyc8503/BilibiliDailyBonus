@@ -33,9 +33,7 @@ import subprocess
 import sys
 import threading
 import time
-import toml
 from multiprocessing import freeze_support, Manager, Pool, Process
-from selenium import webdriver
 from urllib import parse
 
 __author__ = "Hsury"
