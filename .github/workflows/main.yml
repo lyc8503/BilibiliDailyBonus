@@ -21,10 +21,12 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
-    - name: get_coin
-      uses: ./
-        env:
-          account: ${{ secrets.ACCOUNT }}
-          password: ${{ secrets.PASSWORD }}
+    
+    - name: 执行程序
       run: |
-        python daily_bonus.py
+          account=' ${{ secrets.ACCOUNT }}'
+          password=' ${{ secrets.PASSWORD }}'
+          python daily_bonus.py <<EOF
+          $account
+          &password
+          EOF
