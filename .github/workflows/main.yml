@@ -1,4 +1,4 @@
-name: get_coin
+name: get_bilicoins
 
 on:
   push:
@@ -24,9 +24,10 @@ jobs:
     
     - name: 执行程序
       run: |
-          account=' ${{ secrets.ACCOUNT }}'
-          password=' ${{ secrets.PASSWORD }}'
-          python daily_bonus.py <<EOF
+          pip install -r requirements.txt
+          account='${{secrets.ACCOUNT}}'
+          password='${{secrets.PASSWORD}}'
+         python daily_bonus.py <<EOF
           $account
           &password
-          EOF
+        EOF
