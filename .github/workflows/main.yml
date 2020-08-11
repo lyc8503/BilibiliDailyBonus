@@ -1,16 +1,30 @@
+name: get_coin
+
 on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
   schedule:
-    - cron: 00 00 * * *
+    - cron: 0 1 * * *
+  watch:
+    types: started
 
 jobs:
-  bilibili_job:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v2
-      - name: Main
-        uses: ./
+    - uses: actions/checkout@v2
+    - name: 初始化Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: get_coin
+      uses: ./
         env:
           account: ${{ secrets.ACCOUNT }}
           password: ${{ secrets.PASSWORD }}
-
+      run: |
+        python daily_bonus.py
