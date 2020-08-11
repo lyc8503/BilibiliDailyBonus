@@ -5,6 +5,7 @@ on:
 jobs:
   bilibili_job:
     runs-on: ubuntu-18.04
+    if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
