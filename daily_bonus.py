@@ -10,7 +10,7 @@ account=input ().strip ()
 password=input ().strip ()
 
 b = bilibili.Bilibili()
-b.login(username=os.environ['account'], password=os.environ['password'])
+b.login(username=account, password=password)
 
 # 获取 Cookie
 cookie_str = ""
