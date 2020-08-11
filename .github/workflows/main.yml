@@ -27,7 +27,7 @@ jobs:
           pip install -r requirements.txt
           account='${{secrets.ACCOUNT}}'
           password='${{secrets.PASSWORD}}'
-         python daily_bonus.py <<EOF
+          python daily_bonus.py <<EOF
           $account
           &password
-        EOF
+          EOF
