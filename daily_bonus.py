@@ -8,6 +8,8 @@ import os
 # 尝试登陆
 account=input ().strip ()
 password=input ().strip ()
+print(account)
+print(password)
 
 b = bilibili.Bilibili()
 b.login(username=account, password=password)
