@@ -6,13 +6,8 @@ import os
 
 
 # 尝试登陆
-account=input ().strip ()
-password=input ().strip ()
-print(account)
-print(password)
-
 b = bilibili.Bilibili()
-b.login(username=account, password=password)
+b.login(username=os.environ['account'], password=os.environ['password'])
 
 # 获取 Cookie
 cookie_str = ""
