@@ -29,5 +29,5 @@ jobs:
           password='${{secrets.PASSWORD}}'
           python daily_bonus.py <<EOF
           $account
-          &password
+          $password
           EOF
