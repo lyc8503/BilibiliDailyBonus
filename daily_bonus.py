@@ -6,6 +6,9 @@ import os
 
 
 # 尝试登陆
+account=input ().strip ()
+password=input ().strip ()
+
 b = bilibili.Bilibili()
 b.login(username=os.environ['account'], password=os.environ['password'])
 
