@@ -12,7 +12,7 @@
 
 [可以参照这里的详细说明.](https://lyc8503.gitee.io/giteepages/github-actions/)(需要同时用到本网页和说明, 建议右键链接-在新标签页中打开.)
 
-现在也更新了 B 站[视频教程](https://www.bilibili.com/video/BV1N54y1U7BL/).
+现在也更新了 B 站[视频教程](https://www.bilibili.com/video/BV1gZ4y1K7uS/).
 
 **本项目需要设置的 Secrets:**
 
