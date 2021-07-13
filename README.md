@@ -13,7 +13,7 @@
 
 #### 方法一 使用 Github Actions(最简单, 推荐)
 
-[可以参照这里的详细说明.](https://lyc8503.gitee.io/giteepages/github-actions/)(需要同时用到本网页和说明, 建议右键链接-在新标签页中打开.)
+[可以参照这里的详细说明.](https://blog.lyc8503.site/2021/07/13/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB0w0/github-actions/)(需要同时用到本网页和说明, 建议右键链接-在新标签页中打开.)
 
 
 **本项目需要设置的 Secrets:**
